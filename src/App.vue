@@ -7,7 +7,7 @@
 </template>
 <script>
 import tabbar from '@/components/Tabbar'
-import { mapState } from 'vuex' // ES6导出方式
+import { mapState } from 'vuex' // ES6导出方式~
 // import bus from '@/bus'
 export default {
   data () {
