@@ -1,6 +1,6 @@
 <template>
   <div>
-    <tabbar v-show="$store.state.isTabbarshow"></tabbar>
+    <tabbar v-show="isShow"></tabbar>
     <!--路由切换-->
     <router-view></router-view>
  </div>
@@ -22,6 +22,11 @@ export default {
   },
   components: {
     tabbar
+  },
+  computed: {
+    isShow () {
+      return this.$store.state.isTabbarshow
+    }
   }
   // beforeMount () {
   //   bus.$on('maizuo', (data) => {
