@@ -36,6 +36,7 @@ export default {
   //     return this.$store.state.isTabbarshow
   //   }
   // }
+
   // beforeMount () {
   //   bus.$on('maizuo', (data) => {
   //     // console.log('被通知了maizuo', data)  //$on 监听事件总线
