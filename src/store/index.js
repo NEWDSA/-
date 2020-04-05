@@ -11,6 +11,12 @@ export default new Vuex.Store({
     commingList: []
 
   },
+  getters: {
+    // 處理原始狀態數據
+    comingListGetter (state) {
+      return state.commingList.filter((item, index) => index < 3) // ES5數組過濾方法 filter
+    }
+  },
   mutations: { // 唯一修改状态的位置
     HideMaizuoTabbar (state, data) {
       console.log('HideMaizuoTabbar' + data)

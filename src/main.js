@@ -8,7 +8,6 @@ Vue.config.productionTip = false
 
 console.log(AllA, mya1)
 
-
 new Vue({
   router,
   store,

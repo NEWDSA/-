@@ -1,13 +1,12 @@
-function A1(){
+function A1 () {
 
 }
 
-function A2(){
+function A2 () {
 
 }
 
-
-function A3(){
+function A3 () {
 
 }
 
@@ -25,5 +24,3 @@ const All = {
 }
 
 export default All
-
-
