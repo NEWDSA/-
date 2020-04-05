@@ -20,6 +20,7 @@
 <script>
 import swiper from './Detail/DetailSwiper'
 import axios from 'axios'
+import { HIDE_TABBAR_MUTATION, SHOW_TABBAR_MUTATION } from '@/type'
 // import bus from '@/bus'
 export default {
   props: ['id'],
@@ -31,7 +32,7 @@ export default {
   beforeMount () {
     // bus.$emit('maizuo', false) // 触发事件总线
     // this.$store.state.isTabbarShow=false;
-    this.$store.commit('HideMaizuoTabbar', false) // 第一个参数就是mutation的名字
+    this.$store.commit(HIDE_TABBAR_MUTATION, false) // 第一个参数就是mutation的名字
     console.log('开始了')
   },
   mounted () {
@@ -50,7 +51,7 @@ export default {
   beforeDestroy () {
     // bus.$emit('maizuo', true)
     // this.$store.state.isTabbarShow=true;
-    this.$store.commit('ShowMaizuoTabbar', true) // 第一个参数就是mutation的名字
+    this.$store.commit(SHOW_TABBAR_MUTATION, true) // 第一个参数就是mutation的名字
     console.log('结束了')
   },
   components: {

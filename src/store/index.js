@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import Axios from 'axios'
-
+import { HIDE_TABBAR_MUTATION, SHOW_TABBAR_MUTATION } from '@/type'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -18,11 +18,11 @@ export default new Vuex.Store({
     }
   },
   mutations: { // 唯一修改状态的位置
-    HideMaizuoTabbar (state, data) {
+    [HIDE_TABBAR_MUTATION] (state, data) {
       console.log('HideMaizuoTabbar' + data)
       state.isTabbarshow = data
     },
-    ShowMaizuoTabbar (state, data) {
+    [SHOW_TABBAR_MUTATION] (state, data) {
       state.isTabbarshow = data
       console.log('ShowMaizuoTabbar' + data)
     },
