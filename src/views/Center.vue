@@ -1,6 +1,7 @@
 <template>
     <div>
         Center
+        <el-button size="small" loading="true">使用按鈕</el-button>
     </div>
 </template>
 <script>
